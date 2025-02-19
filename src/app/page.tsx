@@ -6,6 +6,7 @@ import { InfoDomain } from './types/infoDomain';
 import Loading from './components/Loading';
 import List from './components/List';
 import ErrorMessage from './components/Error';
+import PasswordChart from './components/PasswordChart';
 
 export default function Home() {
   const [searchInput, setSearchInput] = useState<string>('');
@@ -57,6 +58,11 @@ export default function Home() {
           />
         )}
       </div>
+      {users.length > 0 && (
+        <div className="w-full">
+          <PasswordChart passwords={users.map((user) => user.password)} />
+        </div>
+      )}
     </div>
   );
 }
