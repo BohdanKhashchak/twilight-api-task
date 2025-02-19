@@ -23,7 +23,6 @@ export default function Home() {
 
     setLoading(true);
     setActiveSearch(true);
-    setUsers([]);
     setError('');
 
     try {
