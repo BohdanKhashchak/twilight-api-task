@@ -8,7 +8,7 @@ export default function Input({
   setSearchInput: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
-    <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+    <div className="w-full mx-auto p-6 bg-white rounded-xl shadow-lg border border-gray-200">
       <label
         htmlFor="domain"
         className="block text-sm font-medium text-gray-700 mb-2"
