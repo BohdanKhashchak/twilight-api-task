@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react';
-import Input from './components/Input';
-import { fetchDomains } from './lib/api';
-import { InfoDomain } from './types/infoDomain';
-import Loading from './components/Loading';
-import List from './components/List';
-import ErrorMessage from './components/Error';
-import PasswordChart from './components/PasswordChart';
+import Input from '../components/Input';
+import { fetchDomains } from '../lib/api';
+import { InfoDomain } from '../types/infoDomain';
+import Loading from '../components/Loading';
+import List from '../components/List';
+import ErrorMessage from '../components/Error';
+import PasswordChart from '../components/PasswordChart';
 
 export default function Home() {
   const [searchInput, setSearchInput] = useState<string>('');
